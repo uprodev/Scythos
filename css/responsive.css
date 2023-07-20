@@ -393,6 +393,8 @@
     display: none; }
 
   footer .bg img.mob {
-    display: block; } }
+    display: block; }
 
+  footer {
+    padding-bottom: 150px; } }
 /*# sourceMappingURL=responsive.css.map */

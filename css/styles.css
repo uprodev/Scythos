@@ -853,7 +853,7 @@ div > canvas {
 /*-----------------FOOTER------------------------*/
 footer {
   position: relative;
-  padding: 0 0 115px; }
+  padding: 0 0 250px; }
   footer .bg {
     position: absolute;
     top: 0;
@@ -1017,4 +1017,6 @@ footer {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.price .item p.link a:after {
+  bottom: -4px; }
 /*# sourceMappingURL=styles.css.map */

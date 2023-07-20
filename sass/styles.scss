@@ -879,7 +879,7 @@ div> canvas{
 /*-----------------FOOTER------------------------*/
 footer{
   position: relative;
-  padding: 0 0 115px;
+  padding: 0 0 250px;
   .bg{
     position: absolute;
     top: 0;
@@ -1026,4 +1026,8 @@ footer{
 .price .item .btn-wrap{
   display: flex;
   justify-content: center;
+}
+
+.price .item p.link a:after{
+  bottom: -4px;
 }
