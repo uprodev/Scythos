@@ -28,12 +28,11 @@ jQuery(document).ready(function ($) {
     spaceBetween: 0,
     centeredSlides: true,
     loop: true,
-    breakpoints: {
-      576: {
-       loop:false,
-        centeredSlides: false,
-      },
-    }
+    speed:1000,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
   });
 
   /*slider*/
@@ -69,5 +68,34 @@ jQuery(document).ready(function ($) {
       $(this).parent('.accordion-item').siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
       $(this).parent('.accordion-item').toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
     })
+  });
+
+  /*btn hover*/
+  $( ".button_su_inner" ).mouseenter(function(e) {
+    var parentOffset = $(this).offset();
+
+    var relX = e.pageX - parentOffset.left;
+    var relY = e.pageY - parentOffset.top;
+    $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+    $(this).prev(".su_button_circle").removeClass("desplode-circle");
+    $(this).prev(".su_button_circle").addClass("explode-circle");
+
+  });
+
+  $( ".button_su_inner" ).mouseleave(function(e) {
+
+    var parentOffset = $(this).offset();
+
+    var relX = e.pageX - parentOffset.left;
+    var relY = e.pageY - parentOffset.top;
+    $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+    $(this).prev(".su_button_circle").removeClass("explode-circle");
+    $(this).prev(".su_button_circle").addClass("desplode-circle");
+
+  });
+
+  /*animations*/
+  AOS.init({
+    disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   });
 });

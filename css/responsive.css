@@ -113,7 +113,10 @@
 
   .price .content {
     grid-gap: 15px;
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+
+  div > canvas {
+    display: none; } }
 @media (max-width: 575px) {
   .content-width {
     width: 100%;
@@ -384,6 +387,12 @@
     font-size: 12px;
     line-height: 36px;
     height: 36px;
-    width: 100%; } }
+    width: 100%; }
+
+  footer .bg img {
+    display: none; }
+
+  footer .bg img.mob {
+    display: block; } }
 
 /*# sourceMappingURL=responsive.css.map */

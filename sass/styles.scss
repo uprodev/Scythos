@@ -10,7 +10,7 @@ body{
   line-height: 24px;
   min-width: 320px;
   position: relative;
-  background: #101012;;
+  background: #080809;
   max-width: 3000px;
   margin: auto;
   color: $accent;
@@ -118,7 +118,7 @@ div> canvas{
   top: 0;
   left: 0;
   max-height: 757px;
-  width: 100%;
+  width: 100%!important;
   opacity: 0.5;
   object-fit: contain;
   object-position: center;
@@ -216,11 +216,7 @@ div> canvas{
     left: 0;
     transition: all .4s ease;
   }
-  &:hover{
-    img{
-      left: 3px;
-    }
-  }
+
 }
 /*-------------------------END-HOME-BANNER------------------------*/
 /*--------------------------ROW-SCROLL------------------------*/
@@ -898,6 +894,9 @@ footer{
       width: 100%;
       height: auto;
     }
+    .mob{
+      display: none;
+    }
   }
   .content-width{
     position: relative;
@@ -949,3 +948,82 @@ footer{
   }
 }
 /*----------------END-FOOTER------------------------*/
+
+.design-elements .content{
+  background-color: rgba(73, 91, 87, 0.1);
+}
+
+.button_su{
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+
+}
+
+.su_button_circle{
+  background-color: red;
+  border-radius: 1000px;
+  position: absolute;
+  left:0;
+  top:0;
+  width: 0px;
+  height: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  pointer-events: none;
+}
+.button_text_container{
+  position:relative;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+}
+
+.explode-circle {
+  animation: explode 0.5s forwards;
+
+}
+
+.desplode-circle{
+  animation: desplode 0.5s forwards;
+}
+
+@keyframes explode {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: rgba(42, 53, 80,0.2);
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: rgba(20, 180, 87,0.8);
+  }
+}
+
+@keyframes desplode {
+  0% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: rgba(20, 180, 87,0.8);
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: rgba(129, 80, 108,0.6);
+  }
+}
+
+.price .item .btn-wrap{
+  display: flex;
+  justify-content: center;
+}
