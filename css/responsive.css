@@ -116,7 +116,7 @@
     grid-template-columns: repeat(1, 1fr); }
 
   div > canvas {
-    display: none; } }
+    display: none !important; } }
 @media (max-width: 575px) {
   .content-width {
     width: 100%;
@@ -396,5 +396,6 @@
     display: block; }
 
   footer {
-    padding-bottom: 150px; } }
+    padding-bottom: 200px; } }
+
 /*# sourceMappingURL=responsive.css.map */
