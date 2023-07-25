@@ -206,7 +206,7 @@ div> canvas{
   height: 48px;
   line-height: 48px;
   padding: 0 20px;
-  color: #101012;
+  color: #101012!important;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -216,7 +216,10 @@ div> canvas{
     left: 0;
     transition: all .4s ease;
   }
+}
 
+.btn-default {
+  color: #101012 !important;
 }
 /*-------------------------END-HOME-BANNER------------------------*/
 /*--------------------------ROW-SCROLL------------------------*/
@@ -877,7 +880,7 @@ div> canvas{
 }
 /*-----------------END-PRICE------------------------*/
 /*-----------------FOOTER------------------------*/
-.footer{
+.footer-new{
   position: relative;
   padding: 0 0 250px;
   .bg{
