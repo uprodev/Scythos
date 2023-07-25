@@ -375,27 +375,27 @@
   .price .content {
     grid-gap: 25px; }
 
-  footer h3 {
+  .footer h3 {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 13px; }
 
-  footer .content {
+  .footer .content {
     padding: 24px 35px; }
 
-  footer .btn-wrap a {
+  .footer .btn-wrap a {
     font-size: 12px;
     line-height: 36px;
     height: 36px;
     width: 100%; }
 
-  footer .bg img {
+  .footer .bg img {
     display: none; }
 
-  footer .bg img.mob {
+  .footer .bg img.mob {
     display: block; }
 
-  footer {
+  .footer {
     padding-bottom: 200px; } }
 
 /*# sourceMappingURL=responsive.css.map */
